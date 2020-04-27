@@ -6,8 +6,10 @@ edition = "2018"
 
 [dependencies]
 rocket = "0.4.4"
-multipart = "0.16.1"
 rocket_upload = "0.1.0"
+rocket-multipart-form-data = "0.8.1"
+rocket-include-static-resources = "0.9.3"
+rocket-raw-response = "0.4.8"
 
 [dependencies.rocket_contrib]
 version = "0.4.4"

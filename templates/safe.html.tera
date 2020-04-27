@@ -1,3 +1,6 @@
+{% extends "base" %}
+
+{% block content %}
 <p>
     Click a link below to download the file.
 </p>
@@ -5,3 +8,4 @@
     thing.zip
 </a>
 <br>
+{% endblock content %}

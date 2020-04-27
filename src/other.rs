@@ -24,17 +24,3 @@ pub fn unsafe_files() -> Template {
     let context = HashMap::<String, String>::new();
     Template::render("safe", context)
 }
-
-#[get("/world")]
-pub fn world() -> &'static str {
-    "Hello, world!"
-}
-
-#[get("/hello/<name>/<age>/<cool>", rank = 2)]
-pub fn hello(name: String, age: u8, cool: bool) -> String {
-    if cool {
-        format!("You're a cool {} year old, {}!", age, name)
-    } else {
-        format!("{}, we need to talk about your coolness.", name)
-    }
-}

@@ -2,7 +2,6 @@
 
 #[macro_use] extern crate rocket;
 extern crate rocket_contrib;
-extern crate multipart;
 
 use rocket_contrib::templates::Template;
 
@@ -18,8 +17,6 @@ fn main() {
         other::safe_files,
         downloads::rainbow,
         other::unsafe_files,
-        other::hello,
-        other::world,
     ])
     .attach(Template::fairing())
     .register(catchers![catch::not_found])
