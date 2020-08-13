@@ -792,6 +792,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "multipart"
+version = "0.17.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8209c33c951f07387a8497841122fc6f712165e3f9bda3e6be4645b58188f676"
+dependencies = [
+ "buf_redux",
+ "httparse",
+ "log 0.4.11",
+ "mime 0.3.16",
+ "mime_guess 2.0.3",
+ "quick-error",
+ "rand 0.6.5",
+ "safemem",
+ "tempfile",
+ "twoway",
+]
+
+[[package]]
 name = "mustache"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1330,13 +1348,12 @@ dependencies = [
 
 [[package]]
 name = "rocket-multipart-form-data"
-version = "0.8.1"
+version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "263253a47c3548467591b4ad7944032f62fe6a0055ee0fd20f8706df1d5c5618"
+checksum = "3976167506b5d00fbc4afb7aa3b16c0558b12d3e78261a4afce3a8ed8c47187a"
 dependencies = [
- "chrono",
  "mime 0.3.16",
- "multipart",
+ "multipart 0.17.0",
  "rocket",
 ]
 
@@ -1406,7 +1423,7 @@ version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "241f21624894d711264e508041b3fb9cd26a1338e7c26c2c945ecbcea4bd7018"
 dependencies = [
- "multipart",
+ "multipart 0.16.1",
  "rocket",
 ]
 
