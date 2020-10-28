@@ -4,6 +4,7 @@
 extern crate rocket_contrib;
 
 use rocket_contrib::templates::Template;
+use rocket_contrib::serve::StaticFiles;
 
 mod other;
 mod downloads;
@@ -11,7 +12,9 @@ mod catch;
 
 fn main() {
     rocket::ignite()
-    .mount("/", routes![
+    .mount("/", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/static")))
+    .mount("/",
+    routes![
         other::favicon,
         other::index,
         other::safe_files,
