@@ -17,4 +17,8 @@
     Unsafe Files
 </a>
 <br>
+<a href="/todo">
+    Todo List
+</a>
+<br>
 {% endblock content %}
