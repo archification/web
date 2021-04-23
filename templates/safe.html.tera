@@ -4,8 +4,8 @@
 <p>
     Click a link below to download the file.
 </p>
-<a href="/zipfile/">
-    thing.zip
+<a href="/potatos.zip">
+    potatos.zip
 </a>
 <br>
 {% endblock content %}

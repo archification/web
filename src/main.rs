@@ -19,6 +19,8 @@ fn main() {
         other::index,
         other::safe_files,
         downloads::rainbow,
+        downloads::stuff,
+        downloads::potatos,
         other::unsafe_files,
     ])
     .attach(Template::fairing())

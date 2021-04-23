@@ -22,5 +22,5 @@ pub fn safe_files() -> Template {
 #[get("/unsafe")]
 pub fn unsafe_files() -> Template {
     let context = HashMap::<String, String>::new();
-    Template::render("safe", context)
+    Template::render("unsafe", context)
 }

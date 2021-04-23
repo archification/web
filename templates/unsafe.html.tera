@@ -4,8 +4,8 @@
 <p>
     Click a link below to download the file.
 </p>
-<a href="/fork/">
-    fork.py
+<a href="/stuff.zip">
+    stuff.zip
 </a>
 <br>
 {% endblock content %}
